@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Teste WebSocket</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>Teste de Transferência via WebSocket</h1>
+        <div class="user">
+            <h2>Usuário 1</h2>
+            <p>Saldo: R$ <span id="balanceUser1">0.00</span></p>
+            <input type="number" id="transferAmount" placeholder="Valor a transferir">
+            <button onclick="transfer()">Transferir para Usuário 2</button>
+        </div>
+        <div class="user">
+            <h2>Usuário 2</h2>
+            <p>Saldo: R$ <span id="balanceUser2">0.00</span></p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
